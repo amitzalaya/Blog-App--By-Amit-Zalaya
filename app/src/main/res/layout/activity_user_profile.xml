@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/profile_bg"
+    tools:context=".UserProfileActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        app:shapeAppearanceOverlay="@style/round"
+        app:tint="@color/Red"
+        app:backgroundTint="@color/light_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/backbutton"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_Profile"
+        android:layout_width="@dimen/_200mdp"
+        android:layout_height="@dimen/_200mdp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/userimage"
+        app:civ_border_color="@color/Blue"
+        app:civ_border_width="@dimen/_2mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5mdp"
+        android:fontFamily="@font/amaranth"
+        android:lineHeight="30dp"
+        android:text="Amit Zalaya"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/user_Profile"
+        app:layout_constraintStart_toStartOf="@+id/user_Profile"
+        app:layout_constraintTop_toBottomOf="@+id/user_Profile" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="234dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/profile_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_name" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/newarticle"
+        android:layout_width="@dimen/_180mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="45dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/baseline_add_24"
+        android:drawablePadding="@dimen/_5mdp"
+        android:drawableTint="@color/white"
+        android:shadowColor="@color/white"
+        android:text="Add new article"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/user_name"
+        app:layout_constraintStart_toStartOf="@+id/user_name"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        tools:ignore="TouchTargetSizeCheck">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/yourarticle"
+        android:layout_width="@dimen/_132mdp"
+        android:layout_height="@dimen/_30mdp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/combinedshape"
+        android:drawablePadding="@dimen/_10mdp"
+        android:drawableTint="@color/white"
+        android:shadowColor="@color/white"
+        android:text="Your articles"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/newarticle"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="@+id/newarticle"
+        app:layout_constraintTop_toBottomOf="@+id/newarticle"
+        tools:ignore="TouchTargetSizeCheck">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/updateProfile"
+        android:layout_width="@dimen/_180mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/baseline_account_circle_24"
+        android:drawablePadding="@dimen/_10mdp"
+        android:drawableTint="@color/white"
+        android:shadowColor="@color/white"
+        android:text="Update Your Profile"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/newarticle"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/newarticle"
+        app:layout_constraintTop_toBottomOf="@+id/yourarticle"
+        tools:ignore="TouchTargetSizeCheck">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logout"
+        android:layout_width="@dimen/_132mdp"
+        android:layout_height="@dimen/_30mdp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/logout"
+        android:drawablePadding="@dimen/_1mdp"
+        android:drawableTint="@color/white"
+        android:shadowColor="@color/light_white"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/yourarticle"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toStartOf="@+id/yourarticle"
+        app:layout_constraintTop_toBottomOf="@+id/updateProfile"
+        app:layout_constraintVertical_bias="0.04000002"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

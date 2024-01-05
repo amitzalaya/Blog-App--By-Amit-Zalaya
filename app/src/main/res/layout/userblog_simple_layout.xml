@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/userblog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_220mdp"
+        android:layout_margin="@dimen/_8mdp"
+        android:backgroundTint="@color/white"
+        app:cardCornerRadius="@dimen/_10mdp"
+        app:cardElevation="@dimen/_8mdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="@dimen/_180mdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/amaranth"
+                android:gravity="center_vertical"
+                android:letterSpacing="0.1"
+                android:lineHeight="@dimen/_16mdp"
+                android:maxLines="2"
+                android:paddingStart="@dimen/_5mdp"
+                android:text="Please Start Writing Better Git Commits"
+                android:textAlignment="textStart"
+                android:textColor="@color/Blue"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText,RtlCompat,RtlSymmetry">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="70dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/amaranth"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="New Bloggar"
+                android:textAlignment="center"
+                android:textColor="@color/Blue"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/user_Profile"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="@+id/user_Profile"
+                app:layout_constraintTop_toBottomOf="@+id/user_Profile" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/date" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="70dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/amaranth"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="29/10/2023"
+                android:textAlignment="center"
+                android:textColor="@color/Blue"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toBottomOf="@+id/user_name"
+                app:layout_constraintEnd_toStartOf="@+id/user_name"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/heading"
+                app:layout_constraintTop_toTopOf="@+id/user_name"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/descrption"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60mdp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/alef"
+                android:gravity="center_horizontal"
+                android:letterSpacing="0.003"
+                android:maxLines="4"
+                android:text="I recently read a helpful article on Hashnode by Simon Egersand titled &quot;Write Git Commit Messages Your Colleagues Will Love,&quot; and it inspired me to dive a little deeper into understanding what makes a Git commit good or bad. "
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+
+            <Button
+                android:id="@+id/readmore"
+                android:layout_width="92dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/Blue"
+                android:text="Read "
+                android:textSize="18sp"
+                android:textStyle="italic"
+                app:cornerRadius="@dimen/_10mdp"
+                app:layout_constraintStart_toStartOf="@+id/descrption"
+                app:layout_constraintTop_toBottomOf="@+id/descrption"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+            <Button
+                android:id="@+id/editblog"
+                android:layout_width="92dp"
+                android:layout_height="44dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/editbutton_color"
+                android:text="Edit"
+                android:textColor="@color/profile_bg"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/_10mdp"
+                app:layout_constraintBottom_toBottomOf="@+id/deleteblog"
+                app:layout_constraintEnd_toEndOf="@+id/descrption"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toEndOf="@+id/deleteblog"
+                app:layout_constraintTop_toTopOf="@+id/deleteblog"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/deleteblog"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="@color/Red"
+                android:text="Delete"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                app:cornerRadius="@dimen/_10mdp"
+                app:layout_constraintBottom_toBottomOf="@+id/readmore"
+                app:layout_constraintEnd_toEndOf="@+id/descrption"
+                app:layout_constraintHorizontal_bias="0.11"
+                app:layout_constraintStart_toEndOf="@+id/readmore"
+                app:layout_constraintTop_toTopOf="@+id/readmore"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_Profile"
+                android:layout_width="@dimen/_30mdp"
+                android:layout_height="@dimen/_30mdp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="@dimen/_23mdp"
+                android:src="@drawable/userimage"
+                android:visibility="visible"
+                app:civ_border_color="@color/Blue"
+                app:civ_border_width="@dimen/_2mdp"
+                app:layout_constraintBottom_toBottomOf="@+id/heading"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toEndOf="@+id/heading"
+                app:layout_constraintTop_toTopOf="@+id/heading" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="left"
+                app:constraint_referenced_ids="heading" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="320dp"
+                android:layout_marginEnd="391dp"
+                app:barrierDirection="left"
+                app:constraint_referenced_ids="user_Profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.76
+"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

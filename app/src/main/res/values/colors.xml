@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#050505</color>
+    <color name="white">#FFFFFF</color>
+    <color name="Red">#FF0000</color>
+    <color name="red">#FB3636</color>
+    <color name="Blue">#00A3FF</color>
+    <color name="light_white">#EFEFEF</color>
+    <color name="perple">#794AF8</color>
+    <color name="gray">#C1E6DCDC</color>
+    <color name="profile_bg">#4E4E4E</color>
+    <color name="profile_view">#C8C8C8</color>
+    <color name="editbutton_color">#F1D24C</color>
+    <color name="grayshimar">#E6DCDC</color>
+
+</resources>

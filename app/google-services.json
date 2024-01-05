@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "873852431233",
+    "project_id": "readblog-app",
+    "storage_bucket": "readblog-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873852431233:android:f506c2786555e9ff0c5680",
+        "android_client_info": {
+          "package_name": "com.example.readblogapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKtLJij1yGzvM3AtCnTwaKkoVGM277ozw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
